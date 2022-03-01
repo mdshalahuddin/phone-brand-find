@@ -206,7 +206,7 @@ header .input-group {
 }
 
 .brand-content .list-group-item p strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .brand-content .list-group-item:last-child {
@@ -220,7 +220,7 @@ header .input-group {
     justify-content: center;
     align-items: center;
     background: #bd6767;
-    border-radius: 1rem;
+    border-radius: 16 px;
     display: none;
     transition: all 0.3s linear;
 }
