@@ -1,0 +1,283 @@
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.btn-style{
+    color: #ffffff;
+    background: #ca0550;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+.btn-style:hover {
+   background-color: #454545;
+   color: #ffffff;
+   border-radius: 5px;
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+    pointer-events: none;
+    opacity: 1;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+    box-shadow: none;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: #ffffff;
+}
+
+.form-control:focus {
+    color: #1d335f;
+    background-color: #fff;
+    border-color: #1d335f;
+    outline: 0;
+    box-shadow: none;
+}
+
+/* -----------------------------
+            Header Section
+-----------------------------== */
+header {
+    min-height: 380px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+header .input-group {
+    max-width: 495px;
+    margin: auto;
+}
+
+/* -----------------------------
+         Search Result Section
+-----------------------------== */
+.search-result {
+    padding: 100px 0;
+    min-height: 300px;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 0px 30px rgba(29, 51, 95, 0.1);
+}
+
+.card figure {
+    margin: 0;
+    text-align: center;
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card figure:hover {
+    background: #f1f1f1;
+}
+
+.card img {
+    border-radius: 5px;
+    height: 170px;
+    width: auto;
+}
+
+.card .d-flex {
+    flex-wrap: wrap;
+}
+
+.card-title {
+    color: #d1284d;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card-title:hover {
+    color: #143c69;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.card h6 {
+    color: #7c1010;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.card .btn-style {
+    border-radius: 6px;
+}
+
+/* -----------------------------
+          Phone Details
+----------------------------- */
+.brand-content {
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+}
+.brand-content figure {
+    background: radial-gradient(white, #f5f5f5);
+    margin: 0;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+}
+.brand-content .card {
+    border-radius: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    margin-top: 10px;
+}
+
+.brand-model {
+    padding: 20px 30px 16px;
+    border-bottom: none;
+    border-top-left-radius: 16px ;
+    border-top-right-radius: 16px;
+}
+
+
+.brand-model .modal-title {
+    color: #1d335f;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+    background-color: #a1617a;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 1.5rem 1.25rem;
+}
+.brand-content .list-group-item {
+    color: #a10a0a;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: #164c83;
+}
+
+.brand-content .list-group-item p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+.brand-content .list-group-item p strong {
+    font-weight: 600;
+}
+
+.brand-content .list-group-item:last-child {
+    padding-bottom: 0;
+}
+
+.preloader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #bd6767;
+    border-radius: 1rem;
+    display: none;
+    transition: all 0.3s linear;
+}
+
+.preloader .spinner-load {
+    border: 4px solid #210eca;
+    border-right-color: #dbdbdb;
+}
+
+/* -----------------------------
+            Footer Section
+-----------------------------== */
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #1d335f;
+}
+
+footer p {
+    color: #ececec;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+/* -----------------------------
+            Responsive Style
+-----------------------------== */
+@media screen and (max-width: 600px) {
+    header {
+        min-height: 200px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 15px;
+    }
+    header .input-group {
+        width: 265px;
+        margin: auto;
+    }
+    .search-result {
+        padding: 50px 15px;
+    }
+    .card img {
+        height: 135px;
+    }
+    .card-title {
+        margin-bottom: 10px;
+    }
+    .d-flex {
+        flex-direction: column;
+    }
+    .brand-content .list-group-item {
+        flex-direction: column;
+    }
+}
